@@ -55,6 +55,15 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--w
     radial-gradient(ellipse at 70% 50%, rgba(200,240,0,0.08) 0%, transparent 60%),
     radial-gradient(ellipse at 20% 80%, rgba(200,240,0,0.05) 0%, transparent 50%);
 }
+.hero-photo {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0.22;
+  mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+}
 .hero-bg::after {
   content: '';
   position: absolute; inset: 0;
